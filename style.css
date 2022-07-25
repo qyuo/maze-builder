@@ -1,0 +1,65 @@
+html, body {
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(270deg, #ce44dd, #000000);
+    background-size: 400% 400%;
+    -webkit-animation: main-background 30s ease infinite;
+    -moz-animation: main-background 30s ease infinite;
+    animation: main-background 30s ease infinite;
+}
+
+@-webkit-keyframes main-background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes main-background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes main-background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%} 
+}
+
+h1.main-heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+div.maze-inputs {
+    position: absolute; 
+    bottom:0%;
+    width: 230px;
+    margin: 0% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.205);
+}
+
+button {
+    color: white;
+}
+button:disabled,
+button[disabled]{
+  color: inherit;
+  opacity: 75%;;
+}
